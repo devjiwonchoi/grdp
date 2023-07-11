@@ -1,6 +1,6 @@
 {
   "name": "root-dir-path",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A module to get the project root directory, regardless of monorepo.",
   "main": "dist/root-dir-path.js",
   "repository": "https://github.com/devjiwonchoi/root-dir-path",
@@ -9,7 +9,8 @@
   "private": false,
   "scripts": {
     "build": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "publish": "build && npm publish"
   },
   "devDependencies": {
     "@types/jest": "^29.5.2",
