@@ -1,3 +1,3 @@
-declare function rootDirPath(): string | Error
+declare function rootDirPath(): string
 
 export default rootDirPath

@@ -14,7 +14,11 @@ export default function rootDirPath() {
     return cwd
   }
 
-  return new Error(
-    'root-dir-path is not working properly. Please report this issue to [https://github.com/devjiwonchoi/duplicheck/issues](https://github.com/devjiwonchoi/duplicheck/issues)'
-  )
+  if (!currentModulePath || !cwd || !duplicatePath) {
+    throw new Error(
+      '`root-dir-path` is not working properly. Please report this issue to https://github.com/devjiwonchoi/duplicheck/issues'
+    )
+  }
+
+  return duplicatePath
 }
