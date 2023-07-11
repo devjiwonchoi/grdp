@@ -1,8 +1,9 @@
 {
   "name": "root-dir-path",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A module to get the project root directory, regardless of monorepo.",
   "main": "dist/root-dir-path.js",
+  "types": "@types/root-dir-path.d.ts",
   "repository": "https://github.com/devjiwonchoi/root-dir-path",
   "author": "Jiwon Choi",
   "license": "MIT",
@@ -10,7 +11,10 @@
   "scripts": {
     "build": "tsc",
     "test": "jest",
-    "publish": "build && npm publish"
+    "publish": "pnpm build && npm publish"
+  },
+  "dependencies": {
+    "duplicheck": "^0.0.6"
   },
   "devDependencies": {
     "@types/jest": "^29.5.2",
@@ -18,10 +22,10 @@
     "ts-jest": "^29.1.1",
     "typescript": "^5.1.6"
   },
-  "packageManager": "pnpm@8.5.1",
   "engines": {
-    "node": ">= 14"
+    "node": ">= 16"
   },
+  "packageManager": "pnpm@8.5.1",
   "keywords": [
     "root",
     "rootdir",
@@ -32,8 +36,5 @@
     "root-dir-path",
     "root directory path",
     "root-directory-path"
-  ],
-  "dependencies": {
-    "duplicheck": "^0.0.6"
-  }
+  ]
 }

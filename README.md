@@ -9,6 +9,8 @@ npm install root-dir-path
 
 ## Usage
 
+### Default
+
 ```js
 import rootDirPath from 'root-dir-path'
 
