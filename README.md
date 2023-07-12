@@ -1,10 +1,10 @@
-# root-dir-path
+# grdp (Get Root Dir Path)
 Retrieve the root directory path of the project, regardless of monorepo.
 
 ## Installation
 
-```sh
-npm install root-dir-path
+```bash
+npm install grdp
 ```
 
 ## Usage
@@ -12,23 +12,23 @@ npm install root-dir-path
 ### Default
 
 ```js
-import rootDirPath from 'root-dir-path'
+import getRootDirPath from 'grdp'
 
-const rootDirPath = rootDirPath(); // => '/Users/username/Projects/project-name'
+const rootDirPath = getRootDirPath(); // => '/Users/username/Projects/project-name'
 ```
 
 ### Monorepo
 
 ```js
 // repo1/some/path/file.js
-import rootDirPath from 'root-dir-path'
+import rootDirPath from 'grdp'
 
-const monorepoRootDirPath = rootDirPath(); // => '/Users/username/Projects/monorepo/repo1'
+const monorepoRootDirPath = getRootDirPath(); // => '/Users/username/Projects/monorepo/repo1'
 ```
 
 ```js
 // repo2/some/path/file.js
-import rootDirPath from 'root-dir-path'
+import rootDirPath from 'grdp'
 
-const monorepoRootDirPath = rootDirPath(); // => '/Users/username/Projects/monorepo/repo2'
+const monorepoRootDirPath = getRootDirPath(); // => '/Users/username/Projects/monorepo/repo2'
 ```

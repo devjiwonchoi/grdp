@@ -1,4 +1,4 @@
-import rootDirPath from '../src/root-dir-path'
+import rootDirPath from '../src'
 
 describe('rootDirPath', () => {
   it('should return the same path as process.cwd()', () => {

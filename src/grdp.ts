@@ -1,7 +1,7 @@
 import path from 'path'
 import duplicheck from 'duplicheck'
 
-export default function rootDirPath() {
+export default function getRootDirPath() {
   const currentModulePath = path.resolve(__dirname)
   const cwd = process.cwd()
   const duplicatePath = duplicheck(currentModulePath, cwd)
@@ -16,7 +16,7 @@ export default function rootDirPath() {
 
   if (!currentModulePath || !cwd || !duplicatePath) {
     throw new Error(
-      '`root-dir-path` is not working properly. Please report this issue to https://github.com/devjiwonchoi/duplicheck/issues'
+      '`grdp` is not working properly. Please report this issue to https://github.com/devjiwonchoi/duplicheck/issues'
     )
   }
 
